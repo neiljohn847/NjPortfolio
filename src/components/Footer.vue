@@ -1,6 +1,6 @@
 <template>
     <v-footer class="d-flex align-center justify-center">
-        <div class="grey--text text--darken-1">&copy; 2025 Neil John Bitangcol. All rights reserved.</div>
+        <div class="grey--text text--darken-1">&copy; 2026 Neil John Bitangcol. All rights reserved.</div>
     </v-footer>
 </template>
 
