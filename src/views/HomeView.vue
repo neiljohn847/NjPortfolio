@@ -15,7 +15,7 @@
             </div>
             <v-row justify="center">
               <v-btn @click="scrollTo('projects')" class="text-blue mt-8 mx-2" color="primary" tile dark>View My Work<v-icon class="mx-1" right>mdi-open-in-new</v-icon></v-btn>
-              <v-btn class="text-blue mt-8" color="primary" tile dark>Download Resume <v-icon class="mx-1" right>mdi-download</v-icon></v-btn>
+              <v-btn @click="downloadResume" class="text-blue mt-8" color="primary" tile dark>Download Resume <v-icon class="mx-1" right>mdi-download</v-icon></v-btn>
             </v-row>
           </v-col>
         </v-row>
@@ -48,11 +48,11 @@
 
             <v-row class="mt-8 text-center" v-intersect="onIntersect">
               <v-col cols="6" md="3">
-                <div class="font-weight-bold text-h6">{{ experience }}+ Years</div>
+                <div class="font-weight-bold text-h6">{{ experience }} + Years</div>
                 <div class="grey--text">Experience</div>
               </v-col>
               <v-col cols="6" md="3">
-                <div class="font-weight-bold text-h6">{{ projects }}+ Completed</div>
+                <div class="font-weight-bold text-h6">{{ projects }} Completed</div>
                 <div class="grey--text">Projects</div>
               </v-col>
               <!-- <v-col cols="6" md="3">
@@ -150,7 +150,7 @@
                 <p>{{ project.description }}</p>
                 <v-chip v-for="(tech, i) in project.technologies" :key="i" class="hover-chip mx-1" label small>{{ tech }}</v-chip>
               </v-card-text>
-              <v-card-text><h4>{{ project.start }}</h4></v-card-text>
+              <v-card-text><h4 class="project-start">{{ project.start }}</h4></v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -265,7 +265,7 @@ export default ({
         {
           title: "Ecare App",
           description: "Ecare is a mobile and web application designed to provide comprehensive healthcare services with a responsive and user-friendly interface.",
-          images: [require('@/assets/njlogo.png')],
+          images: [require('@/assets/ECARESYSTEM.jpg')],
           technologies: ["Vue.js", "Vuetify", "PHP"],
           start: "2023 - Present"
         },
@@ -314,16 +314,22 @@ export default ({
       if (el) {
         el.scrollIntoView({ behavior: "smooth" });
       }
+    },
+
+    downloadResume() {
+      const link = document.createElement('a');
+      link.href = window.location.origin + '/CV.pdf';
+      link.download = 'CV.pdf';
+      link.click();
     }
   },
-});
+})
 </script>
 
 <style scoped>
 .v-container {
   padding: 16px 0;
 }
-
 .head {
   position: relative;
   text-align: center;
@@ -333,25 +339,19 @@ export default ({
   width: 100%;
   color: white;
 }
-
-
-.head h1,
-.head span {
+.head h1, .head span {
   position: relative;
   z-index: 2;
   color: black;
 }
-
 .hover-chip {
   transition: all 0.3s ease;
 }
-
 .hover-chip:hover {
   background-color: #000000 !important; 
   color: black !important; 
   cursor: pointer;
 }
-
 .project-card {
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -360,8 +360,6 @@ export default ({
   transform: translateY(-10px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
-
-/* Image hover effect */
 .image-wrapper {
   overflow: hidden;
   border-top-left-radius: 12px;
@@ -371,6 +369,10 @@ export default ({
   transition: transform 0.4s ease;
 }
 .hover-image:hover {
-  transform: scale(1.1); /* zoom in */
+  transform: scale(1.1);
+}
+.project-start{
+  font-size: 1rem;
+  color: #ff0000;
 }
 </style>
