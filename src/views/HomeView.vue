@@ -9,7 +9,7 @@
               <div class="mt-5">
                 <h1>Hello,</h1>
                 <h1>I'm Neil John Bitangcol</h1>
-                <span>Front-End Developer</span> <br>
+                <span> Front-End Developer </span> <br>
                 <span>Open to collaboration, knowledge-sharing, and exciting opportunities that push the boundaries of front-end development.
                   Passionate about continous learning, adapting to new technologies, and delivering results that matter.
                 </span>
