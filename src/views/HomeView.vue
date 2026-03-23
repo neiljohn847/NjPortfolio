@@ -15,7 +15,7 @@
             </div>
             <v-row justify="center">
               <v-btn @click="scrollTo('projects')" class="text-blue mt-8 mx-2" color="primary" tile dark>View My Work<v-icon class="mx-1" right>mdi-open-in-new</v-icon></v-btn>
-              <v-btn @click="downloadResume" class="text-blue mt-8" color="primary" tile dark>Download Resume <v-icon class="mx-1" right>mdi-download</v-icon></v-btn>
+              <v-btn @click="downloadResume" :loading="loading_download" class="text-blue mt-8" color="primary" tile dark>Download Resume <v-icon class="mx-1" right>mdi-download</v-icon></v-btn>
             </v-row>
           </v-col>
         </v-row>
@@ -249,18 +249,11 @@ export default ({
 
   data() {
     return {
-      // counters
       experience: 0,
       projects: 0,
-      // clients: 0,
-
-      // target values
       experiences: 2,
       target_projects: 3,
-      // targetClients: 25,
-
       animated: false,
-
       projects_items: [
         {
           title: "Ecare App",
@@ -283,7 +276,8 @@ export default ({
           technologies: ["Angular", "TypeScript", "Php", "JavaScript", "JSON"],
           start: "2022"
         }
-      ]
+      ],
+      loading_download: false
     };
   },
 
@@ -318,8 +312,8 @@ export default ({
 
     downloadResume() {
       const link = document.createElement('a');
-      link.href = window.location.origin + '/CV.pdf';
-      link.download = 'CV.pdf';
+      link.href = window.location.origin + '/Resume.pdf';
+      link.download = 'Resume.pdf';
       link.click();
     }
   },
