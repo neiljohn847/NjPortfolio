@@ -114,7 +114,7 @@
                   <div class="d-flex flex-wrap gap-2">
                     <v-chip class="ma-1 hover-chip" outlined small>Angular</v-chip>
                     <v-chip class="ma-1 hover-chip" outlined small>Ionic</v-chip>
-                    <v-chip class="ma-1 hover-chip" outlined small>Vue.js</v-chip>
+                    <v-chip class="ma-1 hover-chip" outlined small>Vue</v-chip>
                     <v-chip class="ma-1 hover-chip" outlined small>TypeScript</v-chip>
                     <v-chip class="ma-1 hover-chip" outlined small>JavaScript</v-chip>
                     <v-chip class="ma-1 hover-chip" outlined small>Vuetify</v-chip>
@@ -144,6 +144,7 @@
               <v-chip class="ma-2 hover-chip" outlined>Vuetify</v-chip>
               <v-chip class="ma-2 hover-chip" outlined>HTML/CSS</v-chip>
               <v-chip class="ma-2 hover-chip" outlined>Ionic</v-chip>
+              <v-chip class="ma-2 hover-chip" outlined>PHP</v-chip>
             </v-row>
           </div>
         </transition>
@@ -300,14 +301,14 @@ export default ({
           title: "Ecare App",
           description: "Ecare is a mobile and web application designed to provide comprehensive healthcare services with a responsive and user-friendly interface.",
           images: [require('@/assets/ECARESYSTEM.jpg')],
-          technologies: ["Vue", "Vuetify", "PHP", "JavaScript"],
+          technologies: ["Vue", "Vuetify", "PHP", "JavaScript", "JSON"],
           start: "2023 - Present"
         },
         {
           title: "Gordon College Student Attendance Monitoring System",
           description: "A full-stack monitoring system designed to streamline attendance tracking for students at Gordon College, providing an efficient and user-friendly interface for both students and administrators.",
           images: [require('@/assets/GCSampMobile.png'), require('@/assets/GCSAMPWEB-ADMIN.png'), require('@/assets/GCSAMPWEBFACULTY.png')],
-          technologies: ["Ionic Framework", "Angular", "Bootstrap" , 'TypeScript', 'PHP', 'JavaScript'],
+          technologies: ["Ionic Framework", "Angular", "Bootstrap" , 'TypeScript', 'PHP', 'JavaScript', 'JSON'],
           start: "2022 - 2023"
         },
         {
