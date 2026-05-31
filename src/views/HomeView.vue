@@ -140,7 +140,7 @@
               <v-chip class="ma-2 hover-chip" outlined>Angular</v-chip>
               <v-chip class="ma-2 hover-chip" outlined>TypeScript</v-chip>
               <v-chip class="ma-2 hover-chip" outlined>JavaScript</v-chip>
-              <v-chip class="ma-2 hover-chip" outlined>Vue.js</v-chip>
+              <v-chip class="ma-2 hover-chip" outlined>Vue</v-chip>
               <v-chip class="ma-2 hover-chip" outlined>Vuetify</v-chip>
               <v-chip class="ma-2 hover-chip" outlined>HTML/CSS</v-chip>
               <v-chip class="ma-2 hover-chip" outlined>Ionic</v-chip>
