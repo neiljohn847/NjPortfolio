@@ -300,21 +300,21 @@ export default ({
           title: "Ecare App",
           description: "Ecare is a mobile and web application designed to provide comprehensive healthcare services with a responsive and user-friendly interface.",
           images: [require('@/assets/ECARESYSTEM.jpg')],
-          technologies: ["Vue.js", "Vuetify", "PHP"],
+          technologies: ["Vue", "Vuetify", "PHP", "JavaScript"],
           start: "2023 - Present"
         },
         {
           title: "Gordon College Student Attendance Monitoring System",
           description: "A full-stack monitoring system designed to streamline attendance tracking for students at Gordon College, providing an efficient and user-friendly interface for both students and administrators.",
           images: [require('@/assets/GCSampMobile.png'), require('@/assets/GCSAMPWEB-ADMIN.png'), require('@/assets/GCSAMPWEBFACULTY.png')],
-          technologies: ["Ionic Framework", "AngularJS", "Bootstrap" , 'TypeScript', 'Php', 'JavaScript'],
+          technologies: ["Ionic Framework", "Angular", "Bootstrap" , 'TypeScript', 'PHP', 'JavaScript'],
           start: "2022 - 2023"
         },
         {
           title: "Cooking Co Mobile App",
           description: "A mobile application designed to provide users with a seamless and enjoyable cooking experience, offering a wide range of recipes, meal planning, and interactive features to enhance culinary creativity.",
           images: [require('@/assets/Cooking Co.png')],
-          technologies: ["Angular", "TypeScript", "Php", "JavaScript", "JSON"],
+          technologies: ["Angular", "TypeScript", "PHP", "JavaScript", "JSON"],
           start: "2022"
         }
       ],
